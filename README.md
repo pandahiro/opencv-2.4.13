@@ -36,8 +36,10 @@ This release was built on **Linux Mint 17.3** as part of a project named **"Caix
 For those who prefer to do it step by step:
 
 1. Navigate to the folders containing the split zip files:  
+   - First navigate into:
    **`opencv-2.4.13`** 📁
-   Then:
+
+   - Then navigate into:
    **`opencv-split`** 📁
 
 3. Run the command to combine the split zip files into a single archive:
