@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV Logo" width="300"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/32/OpenCV_Logo_with_text_svg_version.svg" alt="OpenCV Logo" width="200"/>
 
 # 🐱 **OpenCV 2.4.13 Prebuilt Binaries** 🐱
 
@@ -15,13 +15,8 @@ This release was built on **Linux Mint 17.3** as part of a project named **"Caix
    ```
    git clone https://github.com/pandahiro/opencv-2.4.13.git
    ```
-   
-2. Navigate into the directory:
-   ```
-   cd opencv-2.4.13
-   ```
 
-3. **Run the installation script:**
+2. **Run the installation script:**
    ```
    ./install.sh
    ```
