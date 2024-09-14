@@ -37,6 +37,7 @@ For those who prefer to do it step by step:
 
 1. Navigate to the folders containing the split zip files:  
    **`opencv-2.4.13`** 📁
+   Then:
    **`opencv-split`** 📁
 
 3. Run the command to combine the split zip files into a single archive:
