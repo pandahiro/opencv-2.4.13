@@ -30,7 +30,9 @@ cd release || { echo "Directory release not found. Exiting."; exit 1; }
 
 # Install OpenCV
 echo "Starting the installation process..."
-sudo make install
+export OPENCV_DIR=$PWD
+export LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH
+export CPLUS_INCLUDE_PATH=$PWD/include:$CPLUS_INCLUDE_PATH
 if [ $? -ne 0 ]; then
     echo "Error during installation. Exiting."
     exit 1
