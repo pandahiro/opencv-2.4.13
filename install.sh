@@ -12,7 +12,7 @@ cd opencv-split || { echo "Directory opencv-split not found. Exiting."; exit 1; 
 
 # Combine split zip files into one archive
 echo "Combining split zip files into Release-2.4.13.zip..."
-cat "OpenCV 2.4.13 | Part*" > Release-2.4.13.zip
+cat OpenCV* > Release-2.4.13.zip
 if [ $? -ne 0 ]; then
     echo "Error combining zip files. Exiting."
     exit 1
