@@ -62,9 +62,12 @@ For those who prefer to do it step by step:
    cd release
    ```
 
-7. Run the following to install the build:
+7. Run the following commands to install the build:
    ```
-   sudo make install
+   sudo cp -r $PWD/lib/* /usr/lib/
+   sudo cp -r $PWD/include/* /usr/include/
+   sudo cp -r $PWD/bin/* /usr/bin/
+   sudo ldconfig
    ```
 
 8. Done! 🎉 Your OpenCV setup is complete.
