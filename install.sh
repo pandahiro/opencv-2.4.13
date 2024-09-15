@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 # Installer script for OpenCV 2.4.13
 
 # Print info
@@ -29,10 +30,17 @@ fi
 cd release || { echo "Directory release not found. Exiting."; exit 1; }
 
 # Install OpenCV
-echo "Starting the installation process..."
-export OPENCV_DIR=$PWD
-export LD_LIBRARY_PATH=$PWD/lib:$LD_LIBRARY_PATH
-export CPLUS_INCLUDE_PATH=$PWD/include:$CPLUS_INCLUDE_PATH
+echo "Starting the installation process, please enter your password:"
+
+echo "Installing libs..."
+sudo cp -r $PWD/lib/* /usr/lib/
+echo "Installing headers..."
+sudo cp -r $PWD/include/* /usr/include/
+echo "Installing binaries..."
+sudo cp -r $PWD/bin/* /usr/bin/
+echo "Refreshing libraries cache..."
+sudo ldconfig
+
 if [ $? -ne 0 ]; then
     echo "Error during installation. Exiting."
     exit 1
